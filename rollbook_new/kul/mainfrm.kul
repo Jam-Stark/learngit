@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<kul_pkg type="ui" name="mainfrm" xmlns="http://www.kingmesh.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.kingmesh.com kul.xsd">
+  <property name="id">0x2272adf4-0xc78f-0x4d60-0xbb-0x67-0x53-0x58-0x9d-0x35-0xcc-0x53</property>
+  <widget type="form" name="mainfrm_pane">
+    <property name="id">0x858d8c85-0x76b3-0x4f40-0xb9-0x99-0x51-0xd7-0x80-0x5f-0xfb-0x49</property>
+    <property name="style">popup</property>
+    <property name="title">名单</property>
+    <property name="titlebar">true</property>
+    <property name="icon">nil</property>
+    <property name="bkcolor">gray</property>
+    <property name="width">auto</property>
+    <property name="height">auto</property>
+    <property name="center">center</property>
+    <property name="resize">true</property>
+    <property name="show">normal</property>
+    <property name="maximum_box">true</property>
+    <property name="minimum_box">true</property>
+    <property name="close_box">true</property>
+    <property name="toolwindow">false</property>
+    <property name="app_window">true</property>
+    <property name="topmost">true</property>
+    <property name="is_service">false</property>
+    <property name="attachment">none</property>
+    <property name="attachment_size">5</property>
+    <property name="attach_dev">none</property>
+    <property name="attach_dev_size">5</property>
+    <property name="javascript">mainfrm_pane.js</property>
+    <property name="onGeometryChange"/>
+    <property name="onHotKey"/>
+    <widget type="vbox">
+      <property name="adjust">auto</property>
+      <property name="hightlight">false</property>
+      <property name="margin">1</property>
+      <widget type="list">
+        <property name="name">list</property>
+        <property name="id_alias">3</property>
+        <property name="width">100</property>
+        <property name="height">100</property>
+        <property name="adjust">auto</property>
+        <property name="rows">auto</property>
+        <property name="grid">false</property>
+        <property name="behavior">column</property>
+        <property name="mode">single</property>
+        <property name="sort">descending</property>
+        <property name="gray">false</property>
+        <property name="visible">true</property>
+        <property name="onClick"/>
+        <property name="onRightClick"/>
+        <property name="onDoubleClick"/>
+        <property name="onHeaderClick"/>
+        <property name="onChange"/>
+        <property name="onContentMenu"/>
+        <property name="hightlight">false</property>
+      </widget>
+      <widget type="hbox">
+        <property name="adjust">auto</property>
+        <property name="hightlight">false</property>
+        <property name="margin">1</property>
+        <widget type="pushbutton">
+          <property name="name">pushbutton</property>
+          <property name="label">提问</property>
+          <property name="tip"/>
+          <property name="bitmap">nil</property>
+          <property name="bitmap_align">left</property>
+          <property name="width">50</property>
+          <property name="height">12</property>
+          <property name="adjust">fixed</property>
+          <property name="can_check">false</property>
+          <property name="default">false</property>
+          <property name="flat">false</property>
+          <property name="flat_radio">false</property>
+          <property name="gray">false</property>
+          <property name="id_alias">5</property>
+          <property name="visible">true</property>
+          <property name="onClick">sortOne()</property>
+          <property name="onContentMenu"/>
+          <property name="shadow">false</property>
+          <property name="shadow_type">soft</property>
+          <property name="enable_bind"/>
+          <property name="simple_bind"/>
+          <property name="valid_bind"/>
+          <property name="visible_bind"/>
+          <property name="handle_bind"/>
+          <property name="hightlight">false</property>
+        </widget>
+        <widget type="pushbutton">
+          <property name="name"/>
+          <property name="label">随机点名</property>
+          <property name="tip"/>
+          <property name="bitmap">nil</property>
+          <property name="bitmap_align">left</property>
+          <property name="width">50</property>
+          <property name="height">12</property>
+          <property name="adjust">fixed</property>
+          <property name="can_check">false</property>
+          <property name="default">false</property>
+          <property name="flat">false</property>
+          <property name="flat_radio">false</property>
+          <property name="gray">false</property>
+          <property name="id_alias">6</property>
+          <property name="visible">true</property>
+          <property name="onClick">sortMutiple()</property>
+          <property name="onContentMenu"/>
+          <property name="shadow">false</property>
+          <property name="shadow_type">soft</property>
+          <property name="enable_bind"/>
+          <property name="simple_bind"/>
+          <property name="valid_bind"/>
+          <property name="visible_bind"/>
+          <property name="handle_bind"/>
+          <property name="hightlight">false</property>
+        </widget>
+      </widget>
+    </widget>
+  </widget>
+</kul_pkg>
